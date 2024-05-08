@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c325jbccwastd"]
+[gd_scene load_steps=8 format=3 uid="uid://c325jbccwastd"]
 
 [ext_resource type="Texture2D" uid="uid://bttw1owylr8or" path="res://background.jpg" id="1_fubhl"]
 [ext_resource type="Script" path="res://start_button.gd" id="1_u7jme"]
@@ -9,9 +9,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_as1p4"]
 size = Vector2(42, 42)
-
-[sub_resource type="LabelSettings" id="LabelSettings_hffsu"]
-font_color = Color(0.00392157, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
 
@@ -1157,14 +1154,6 @@ script = ExtResource("4_sd6nw")
 [node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button10"]
 visible = false
 texture = ExtResource("5_wr80r")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 80.0
-offset_top = 153.0
-offset_right = 209.0
-offset_bottom = 247.0
-text = "полная пизда"
-label_settings = SubResource("LabelSettings_hffsu")
 
 [connection signal="toggled" from="Button" to="Button" method="_on_toggled"]
 [connection signal="toggled" from="Button" to="field" method="_on_button_toggled"]
