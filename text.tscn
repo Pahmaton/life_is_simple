@@ -1,0 +1,1360 @@
+[gd_scene load_steps=8 format=3 uid="uid://c325jbccwastd"]
+
+[ext_resource type="Texture2D" uid="uid://bttw1owylr8or" path="res://background.jpg" id="1_fubhl"]
+[ext_resource type="Script" path="res://start_button.gd" id="1_u7jme"]
+[ext_resource type="Texture2D" uid="uid://dw375uvcdsxq2" path="res://field.png" id="2_8y2ju"]
+[ext_resource type="Script" path="res://field.gd" id="2_sey28"]
+[ext_resource type="Script" path="res://simple_circle_button.gd" id="4_sd6nw"]
+[ext_resource type="Texture2D" uid="uid://nk3kvxm12mv6" path="res://simpe_circle.png" id="5_wr80r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_as1p4"]
+size = Vector2(42, 42)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+top_level = true
+offset_left = 539.0
+offset_top = 579.0
+offset_right = 610.0
+offset_bottom = 619.0
+toggle_mode = true
+text = "start"
+script = ExtResource("1_u7jme")
+
+[node name="Background" type="Sprite2D" parent="."]
+visibility_layer = 4
+position = Vector2(574.75, 322.5)
+scale = Vector2(0.191417, 0.16125)
+texture = ExtResource("1_fubhl")
+
+[node name="field" type="Node2D" parent="."]
+script = ExtResource("2_sey28")
+
+[node name="Field_texture" type="Sprite2D" parent="field"]
+position = Vector2(574, 310)
+texture = ExtResource("2_8y2ju")
+
+[node name="row_buttons_1" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(354, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(403, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(452, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(501, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(550, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(599, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(648, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(697, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(746, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_1"]
+top_level = true
+position = Vector2(795, 90)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_1/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_2" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(354, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(403, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(452, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(501, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(550, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(599, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(648, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(697, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(746, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_2"]
+top_level = true
+position = Vector2(795, 139)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_2/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_3" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(354, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(403, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(452, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(501, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(550, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(599, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(648, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(697, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(746, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_3"]
+top_level = true
+position = Vector2(795, 188)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_3/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_4" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(354, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(403, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(452, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(501, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(550, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(599, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(648, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(697, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(746, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_4"]
+top_level = true
+position = Vector2(795, 237)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_4/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_5" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(354, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(403, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(452, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(501, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(550, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(599, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(648, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(697, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(746, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_5"]
+top_level = true
+position = Vector2(795, 286)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_5/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_6" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(354, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(403, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(452, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(501, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(550, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(599, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(648, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(697, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(746, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_6"]
+top_level = true
+position = Vector2(795, 335)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_6/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_7" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(354, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(403, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(452, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(501, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(550, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(599, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(648, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(697, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(746, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_7"]
+top_level = true
+position = Vector2(795, 384)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_7/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_8" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(354, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(403, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(452, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(501, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(550, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(599, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(648, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(697, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(746, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_8"]
+top_level = true
+position = Vector2(795, 433)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_8/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_9" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(354, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(403, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(452, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(501, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(550, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(599, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(648, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(697, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(746, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_9"]
+top_level = true
+position = Vector2(795, 482)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_9/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="row_buttons_10" type="Node2D" parent="field"]
+
+[node name="simple_circle_button1" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(354, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button1"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button2" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(403, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button2"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button3" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(452, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button3"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button4" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(501, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button4"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button5" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(550, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button5"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button6" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(599, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button6"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button7" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(648, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button7"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button8" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(697, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button8"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button9" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(746, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button9"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[node name="simple_circle_button10" type="TouchScreenButton" parent="field/row_buttons_10"]
+top_level = true
+position = Vector2(795, 531)
+shape = SubResource("RectangleShape2D_as1p4")
+shape_centered = false
+script = ExtResource("4_sd6nw")
+
+[node name="texture" type="Sprite2D" parent="field/row_buttons_10/simple_circle_button10"]
+visible = false
+texture = ExtResource("5_wr80r")
+
+[connection signal="toggled" from="Button" to="Button" method="_on_toggled"]
+[connection signal="toggled" from="Button" to="field" method="_on_button_toggled"]
+[connection signal="cell_change" from="field" to="field" method="_on_cell_change"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button1" to="field/row_buttons_1/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button2" to="field/row_buttons_1/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button3" to="field/row_buttons_1/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button4" to="field/row_buttons_1/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button5" to="field/row_buttons_1/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button6" to="field/row_buttons_1/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button7" to="field/row_buttons_1/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button8" to="field/row_buttons_1/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button9" to="field/row_buttons_1/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_1/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_1/simple_circle_button10" to="field/row_buttons_1/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button1" to="field/row_buttons_2/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button2" to="field/row_buttons_2/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button3" to="field/row_buttons_2/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button4" to="field/row_buttons_2/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button5" to="field/row_buttons_2/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button6" to="field/row_buttons_2/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button7" to="field/row_buttons_2/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button8" to="field/row_buttons_2/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button9" to="field/row_buttons_2/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_2/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_2/simple_circle_button10" to="field/row_buttons_2/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button1" to="field/row_buttons_3/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button2" to="field/row_buttons_3/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button3" to="field/row_buttons_3/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button4" to="field/row_buttons_3/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button5" to="field/row_buttons_3/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button6" to="field/row_buttons_3/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button7" to="field/row_buttons_3/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button8" to="field/row_buttons_3/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button9" to="field/row_buttons_3/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_3/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_3/simple_circle_button10" to="field/row_buttons_3/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button1" to="field/row_buttons_4/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button2" to="field/row_buttons_4/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button3" to="field/row_buttons_4/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button4" to="field/row_buttons_4/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button5" to="field/row_buttons_4/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button6" to="field/row_buttons_4/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button7" to="field/row_buttons_4/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button8" to="field/row_buttons_4/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button9" to="field/row_buttons_4/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_4/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_4/simple_circle_button10" to="field/row_buttons_4/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button1" to="field/row_buttons_5/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button2" to="field/row_buttons_5/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button3" to="field/row_buttons_5/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button4" to="field/row_buttons_5/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button5" to="field/row_buttons_5/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button6" to="field/row_buttons_5/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button7" to="field/row_buttons_5/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button8" to="field/row_buttons_5/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button9" to="field/row_buttons_5/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_5/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_5/simple_circle_button10" to="field/row_buttons_5/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button1" to="field/row_buttons_6/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button2" to="field/row_buttons_6/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button3" to="field/row_buttons_6/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button4" to="field/row_buttons_6/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button5" to="field/row_buttons_6/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button6" to="field/row_buttons_6/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button7" to="field/row_buttons_6/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button8" to="field/row_buttons_6/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button9" to="field/row_buttons_6/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_6/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_6/simple_circle_button10" to="field/row_buttons_6/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button1" to="field/row_buttons_7/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button2" to="field/row_buttons_7/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button3" to="field/row_buttons_7/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button4" to="field/row_buttons_7/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button5" to="field/row_buttons_7/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button6" to="field/row_buttons_7/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button7" to="field/row_buttons_7/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button8" to="field/row_buttons_7/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button9" to="field/row_buttons_7/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_7/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_7/simple_circle_button10" to="field/row_buttons_7/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button1" to="field/row_buttons_8/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button2" to="field/row_buttons_8/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button3" to="field/row_buttons_8/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button4" to="field/row_buttons_8/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button5" to="field/row_buttons_8/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button6" to="field/row_buttons_8/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button7" to="field/row_buttons_8/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button8" to="field/row_buttons_8/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button9" to="field/row_buttons_8/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_8/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_8/simple_circle_button10" to="field/row_buttons_8/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button1" to="field/row_buttons_9/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button2" to="field/row_buttons_9/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button3" to="field/row_buttons_9/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button4" to="field/row_buttons_9/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button5" to="field/row_buttons_9/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button6" to="field/row_buttons_9/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button7" to="field/row_buttons_9/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button8" to="field/row_buttons_9/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button9" to="field/row_buttons_9/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_9/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_9/simple_circle_button10" to="field/row_buttons_9/simple_circle_button10" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button1" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button1" to="field/row_buttons_10/simple_circle_button1" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button2" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button2" to="field/row_buttons_10/simple_circle_button2" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button3" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button3" to="field/row_buttons_10/simple_circle_button3" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button4" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button4" to="field/row_buttons_10/simple_circle_button4" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button5" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button5" to="field/row_buttons_10/simple_circle_button5" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button6" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button6" to="field/row_buttons_10/simple_circle_button6" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button7" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button7" to="field/row_buttons_10/simple_circle_button7" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button8" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button8" to="field/row_buttons_10/simple_circle_button8" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button9" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button9" to="field/row_buttons_10/simple_circle_button9" method="_on_pressed"]
+[connection signal="position_button" from="field/row_buttons_10/simple_circle_button10" to="field" method="_on_simple_circle_button_position_button"]
+[connection signal="pressed" from="field/row_buttons_10/simple_circle_button10" to="field/row_buttons_10/simple_circle_button10" method="_on_pressed"]
