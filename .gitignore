@@ -6,6 +6,7 @@ project.godot
 scn/
 override.cfg
 
+
 # Godot-specific ignores
 .import/
 export.cfg
